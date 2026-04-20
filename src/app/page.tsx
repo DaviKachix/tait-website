@@ -10,11 +10,17 @@ import MissionAlignment from "@/components/home/mission-alignment/MissionAlignme
 export default function Home() {
   return (
 <main
-  className="flex flex-col min-h-dvh bg-cover bg-center bg-no-repeat"
+  className="relative flex flex-col min-h-dvh bg-cover bg-center bg-no-repeat"
   style={{
     backgroundImage: "url('/man-computer.webp')",
   }}
 >
+  {/* Grapevine soft tint overlay */}
+  <div className="absolute inset-0 bg-[#7f264a]/10" />
+
+  {/* optional extra soft white wash for readability */}
+  <div className="absolute inset-0 bg-white/30" />
+
       {/* Hero */}
       <section>
         <Hero />
