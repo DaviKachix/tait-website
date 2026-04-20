@@ -36,7 +36,7 @@ const slides: Slide[] = [
   {
     type: "image",
     title: "RESEARCH, SYSTEMS & INNOVATION",
-    image: "/images/research.webp",
+    image: "/images/team.webp",
   },
 ];
 

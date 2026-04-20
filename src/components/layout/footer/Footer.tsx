@@ -2,17 +2,30 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#7f264a] text-white mt-16">
+    <footer className="relative bg-[#7f264a] text-white mt-16 overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6 py-14 text-sm font-medium">
+      {/* ================= WATERMARK ================= */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <Image
+          src="/images/TAIT8.svg"
+          alt="TAIT watermark"
+          width={800}
+          height={800}
+          className="opacity-[0.64] scale-95 object-contain animate-[float_18s_ease-in-out_infinite]"
+        />
+      </div>
+
+      {/* ================= OVERLAY (IMPROVES READABILITY) ================= */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#7f264a]/90 via-[#7f264a]/95 to-[#7f264a] pointer-events-none" />
+
+      {/* ================= CONTENT ================= */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-14 text-sm font-medium">
 
         {/* ================= TOP GRID ================= */}
         <div className="grid md:grid-cols-4 gap-10">
 
           {/* ABOUT */}
           <div>
-
-            {/* LOGO ADDED */}
             <div className="mb-4">
               <Image
                 src="/images/TAIT8.svg"
@@ -23,9 +36,7 @@ export default function Footer() {
               />
             </div>
 
-            <h3 className="font-bold mb-3">
-              About TAIT
-            </h3>
+            <h3 className="font-bold mb-3">About TAIT</h3>
 
             <p className="leading-relaxed text-white">
               Tanzania Adventist Institute of Technology is a digital mission and technology center
@@ -45,9 +56,7 @@ export default function Footer() {
 
           {/* EXPLORE */}
           <div>
-            <h3 className="font-bold mb-3">
-              EXPROLE
-            </h3>
+            <h3 className="font-bold mb-3">EXPROLE</h3>
 
             <p className="font-semibold">Key Pages</p>
             <ul className="mt-2 space-y-1">
@@ -67,18 +76,14 @@ export default function Footer() {
 
           {/* MISSION MEDIA */}
           <div>
-            <h3 className="font-bold mb-3">
-              MISSION MEDIA
-            </h3>
+            <h3 className="font-bold mb-3">MISSION MEDIA</h3>
 
             <ul className="space-y-1">
               <li><a href="/media-mission" className="hover:underline">Missionary Activities</a></li>
               <li><a href="/initiatives" className="hover:underline">Initiatives</a></li>
             </ul>
 
-            <h3 className="font-bold mt-6 mb-3">
-              GUIDING POLICIES
-            </h3>
+            <h3 className="font-bold mt-6 mb-3">GUIDING POLICIES</h3>
 
             <ul className="space-y-1">
               <li><a href="/policies" className="hover:underline">Guiding Principles</a></li>
@@ -89,9 +94,7 @@ export default function Footer() {
 
           {/* EXTERNAL LINKS + SOCIALS */}
           <div>
-            <h3 className="font-bold mb-3">
-              EXTERNAL LINKS
-            </h3>
+            <h3 className="font-bold mb-3">EXTERNAL LINKS</h3>
 
             <p className="leading-relaxed">
               Connected institutions and church platforms supporting the mission network.
@@ -105,46 +108,25 @@ export default function Footer() {
 
             {/* SOCIALS */}
             <div className="mt-6">
-              <h3 className="font-bold mb-3">
-                Connect With Us
-              </h3>
+              <h3 className="font-bold mb-3">Connect With Us</h3>
 
               <div className="flex gap-4 text-lg">
-
-                <a href="#" className="hover:opacity-80 transition">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="#" className="hover:opacity-80 transition">
-                  <i className="fab fa-instagram"></i>
-                </a>
-
-                <a href="#" className="hover:opacity-80 transition">
-                  <i className="fab fa-youtube"></i>
-                </a>
-
-                <a href="#" className="hover:opacity-80 transition">
-                  <i className="fab fa-x-twitter"></i>
-                </a>
-
-                <a href="#" className="hover:opacity-80 transition">
-                  <i className="fab fa-linkedin-in"></i>
-                </a>
-
+                <a href="#" className="hover:opacity-80 transition"><i className="fab fa-facebook-f"></i></a>
+                <a href="#" className="hover:opacity-80 transition"><i className="fab fa-instagram"></i></a>
+                <a href="#" className="hover:opacity-80 transition"><i className="fab fa-youtube"></i></a>
+                <a href="#" className="hover:opacity-80 transition"><i className="fab fa-x-twitter"></i></a>
+                <a href="#" className="hover:opacity-80 transition"><i className="fab fa-linkedin-in"></i></a>
               </div>
             </div>
-
           </div>
 
         </div>
 
         {/* ================= BOTTOM BAR ================= */}
         <div className="border-t border-white/30 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-
           <p className="text-center md:text-left font-medium">
             © {new Date().getFullYear()} TAIT — Technology at the Heart of the Mission
           </p>
-
         </div>
 
       </div>

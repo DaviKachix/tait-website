@@ -9,8 +9,12 @@ import MissionAlignment from "@/components/home/mission-alignment/MissionAlignme
 
 export default function Home() {
   return (
-<main className="flex flex-col min-h-dvh bg-white">
-
+<main
+  className="flex flex-col min-h-dvh bg-cover bg-center bg-no-repeat"
+  style={{
+    backgroundImage: "url('/man-computer.webp')",
+  }}
+>
       {/* Hero */}
       <section>
         <Hero />
