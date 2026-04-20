@@ -19,10 +19,9 @@ type Slide = {
 const slides: Slide[] = [
   {
     type: "hero",
-    title: "Technology at the Heart of the Mission",
-    text: "TAIT empowers the Church through digital systems, media, and innovation.",
+    title: "TECHNOLOGY AT THE HEART OF THE MISSION",
     subtext:
-      "We design, develop, and integrate solutions that strengthen institutions and extend mission reach.",
+      "Solutions that strengthen institutions and extend mission reach.",
     cta1: "/strategic-areas",
     cta2: "/work-with-us",
     ctaLabel1: "Explore Our Work",
@@ -31,12 +30,12 @@ const slides: Slide[] = [
   },
   {
     type: "image",
-    title: "Media for Mission & Evangelism",
+    title: "MEDIA FOR MISSION & EVANGELISM",
     image: "/images/team.webp",
   },
   {
     type: "image",
-    title: "Research, Systems & Innovation",
+    title: "RESEARCH, SYSTEMS & INNOVATION",
     image: "/images/research.webp",
   },
 ];

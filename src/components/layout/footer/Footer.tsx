@@ -15,11 +15,11 @@ export default function Footer() {
             {/* LOGO ADDED */}
             <div className="mb-4">
               <Image
-                src="/images/tait.jpg"
+                src="/images/TAIT8.svg"
                 alt="TAIT Logo"
-                width={70}
-                height={70}
-                className="object-contain bg-white rounded-full p-1"
+                width={80}
+                height={80}
+                className="object-contain bg-[#7f264a] rounded-full p-1"
               />
             </div>
 

@@ -3,7 +3,7 @@ import Footer from "@/components/layout/footer/Footer";
 
 export const metadata = {
   title: {
-    default: "TAIT",
+    default: "Tanzania Adventist Institute of Technology (TAIT)",
     template: "%s | TAIT",
   },
   description:

@@ -20,19 +20,17 @@ export default function Navbar() {
 
           <div className="px-6 py-3 flex items-center justify-between">
 
-            {/* LOGO */}
-            <Link href="/" className="flex items-center gap-3">
-
-              <div className="w-[44px] h-[44px] bg-white rounded-full overflow-hidden flex items-center justify-center shadow-sm">
-                <Image
-                  src="/images/tait.jpg"
-                  alt="TAIT Logo"
-                  width={120}
-                  height={120}
-                  className="object-cover scale-110"
-                />
-              </div>
-
+    {/* LOGO */}
+<Link href="/" className="flex items-center gap-3">
+  <div className="w-[60px] h-[60px] bg-[#7f264a] rounded-full overflow-hidden flex items-center justify-center shadow-sm">
+    <Image
+      src="/images/TAIT8.svg"
+      alt="TAIT Logo"
+      width={80}
+      height={80}
+      className="object-cover bg-[#7f264a] rounded-full p-0.0005"
+    />
+  </div>
               <div className="leading-tight">
                 <h1 className="text-base font-bold tracking-wide">
                   Tanzania Adventist
